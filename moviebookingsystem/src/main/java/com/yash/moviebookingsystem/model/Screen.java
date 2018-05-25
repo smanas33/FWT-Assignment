@@ -4,6 +4,7 @@ public class Screen {
 	
 	private int screenId;
 	private String screenName;
+	private Movie movie;
 
 	public Screen(int screenId, String screenName) {
 		super();
@@ -18,10 +19,18 @@ public class Screen {
 	public String getScreenName() {
 		return screenName;
 	}
+	
+	public Movie getMovie() {
+		return movie;
+	}
+
+	public void setMovie(Movie movie) {
+		this.movie = movie;
+	}
 
 	@Override
 	public String toString() {
-		return "Screen [screenId=" + screenId + ", screenName=" + screenName + "]";
+		return "Screen [screenId=" + screenId + ", screenName=" + screenName + ", movie=" + movie + "]";
 	}
-	
+
 }
