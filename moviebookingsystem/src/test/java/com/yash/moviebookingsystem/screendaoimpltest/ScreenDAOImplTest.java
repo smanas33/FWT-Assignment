@@ -31,14 +31,14 @@ public class ScreenDAOImplTest {
 	@Test(expected = FileNotExistException.class)
 	public void getAllScreen_ShouldThrowFileNotExistException_WhenGivenFileNotExist() throws FileEmptyException, IOException {		
 		String filePath = anyString();
-		when(fileUtil.readFromJsonFile(filePath)).thenThrow(FileNotExistException.class);
+		when(fileUtil.readFromJsonFile()).thenThrow(FileNotExistException.class);
 		screenDAO.getAllScreen();	
 	}
 	
 	@Test(expected = FileEmptyException.class)
 	public void getAllScreen_ShouldThrowFileEmptyException_WhenGivenFileIsEmpty() throws FileEmptyException, IOException {		
 		String filePath = anyString();
-		when(fileUtil.readFromJsonFile(filePath)).thenThrow(FileEmptyException.class);
+		when(fileUtil.readFromJsonFile()).thenThrow(FileEmptyException.class);
 		screenDAO.getAllScreen();	
 	}
 	

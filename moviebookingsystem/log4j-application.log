@@ -14,3 +14,48 @@
 2018-05-25 19:17:08 INFO  ScreenDAOImpl:28 - Screen inserted
 2018-05-25 19:20:36 INFO  FileUtil:62 - Screen added successfully in src//main//resources//operatormenu//screen.json
 2018-05-25 20:00:20 INFO  FileUtil:63 - Screen added successfully in src//main//resources//operatormenu//screen.json
+2018-05-26 11:43:56 INFO  OperatorMenu:50 - ********************  Welcome To Movie Booking System  **********************
+2018-05-26 11:43:56 INFO  OperatorMenu:50 - 1. Adding Screen to the Theatre
+2018-05-26 11:43:56 INFO  OperatorMenu:50 - 2. Adding Movie to the Screen
+2018-05-26 11:43:56 INFO  OperatorMenu:50 - 3. Design Seating arrangement to a Screen
+2018-05-26 11:43:56 INFO  OperatorMenu:50 - 4. Adding shows for Movie
+2018-05-26 11:43:56 INFO  OperatorMenu:50 - 5. Book Ticket
+2018-05-26 11:43:56 INFO  OperatorMenu:50 - 6. Cancel Booking
+2018-05-26 11:43:56 INFO  OperatorMenu:50 - 7. Show availability
+2018-05-26 11:43:56 INFO  OperatorMenu:50 - 8. Reports
+2018-05-26 11:43:56 INFO  OperatorMenu:50 - Enter your choice: 
+2018-05-26 13:11:53 ERROR ScreenServiceImpl:34 - Screen Object should not be null !!
+2018-05-26 13:13:26 ERROR ScreenServiceImpl:34 - Screen Object should not be null !!
+2018-05-26 13:14:05 ERROR ScreenServiceImpl:38 - Screen already exists
+2018-05-26 13:14:05 ERROR ScreenServiceImpl:31 - Screen Object should not be null !!
+2018-05-26 13:14:05 ERROR ScreenServiceImpl:43 - Screen Size should not more than 3
+2018-05-26 13:14:44 INFO  ScreenDAOImpl:28 - Screen inserted
+2018-05-26 13:16:44 INFO  ScreenDAOImpl:28 - Screen inserted
+2018-05-26 13:19:27 INFO  FileUtil:56 - Screen added successfully in src//main//resources//operatormenu//screen.json
+2018-05-26 13:21:10 INFO  ScreenDAOImpl:28 - Screen inserted
+2018-05-26 13:23:18 INFO  FileUtil:56 - Screen added successfully in src//main//resources//operatormenu//screen.json
+2018-05-26 13:23:51 INFO  ScreenDAOImpl:28 - Screen inserted
+2018-05-26 13:25:33 INFO  ScreenDAOImpl:29 - Screen inserted
+2018-05-26 13:27:17 INFO  ScreenDAOImpl:28 - Screen inserted
+2018-05-26 13:28:52 INFO  ScreenDAOImpl:28 - Screen inserted
+2018-05-26 13:32:36 INFO  FileUtil:59 - Screen added successfully in src//main//resources//operatormenu//screen.json
+2018-05-26 13:33:24 INFO  FileUtil:59 - Screen added successfully in src//main//resources//operatormenu//screen.json
+2018-05-26 14:59:29 INFO  FileUtil:59 - Screen added successfully in src//main//resources//operatormenu//screen.json
+2018-05-26 15:01:54 INFO  FileUtil:59 - Screen added successfully in src//main//resources//operatormenu//screen.json
+2018-05-26 15:02:20 INFO  FileUtil:59 - Screen added successfully in src//main//resources//operatormenu//screen.json
+2018-05-26 15:04:37 INFO  FileUtil:59 - Screen added successfully in src//main//resources//operatormenu//screen.json
+2018-05-26 15:31:54 INFO  FileUtil:63 - Screen added successfully in src//main//resources//operatormenu//screen.json
+2018-05-26 15:32:45 INFO  FileUtil:63 - Screen added successfully in src//main//resources//operatormenu//screen.json
+2018-05-26 15:34:27 INFO  FileUtil:63 - Screen added successfully in src//main//resources//operatormenu//screen.json
+2018-05-26 15:36:05 INFO  FileUtil:63 - Screen added successfully in src//main//resources//operatormenu//screen.json
+2018-05-26 15:36:51 INFO  ScreenDAOImpl:29 - Screen inserted
+2018-05-26 15:44:13 INFO  FileUtil:63 - Screen added successfully in src//main//resources//operatormenu//screen.json
+2018-05-26 15:44:13 INFO  ScreenDAOImpl:33 - Screen inserted
+2018-05-26 15:45:15 INFO  FileUtil:63 - Screen added successfully in src//main//resources//operatormenu//screen.json
+2018-05-26 15:45:15 INFO  ScreenDAOImpl:33 - Screen inserted
+2018-05-26 15:48:06 INFO  FileUtil:63 - Screen added successfully in src//main//resources//operatormenu//screen.json
+2018-05-26 15:48:33 INFO  FileUtil:63 - Screen added successfully in src//main//resources//operatormenu//screen.json
+2018-05-26 15:55:43 INFO  FileUtil:63 - Screen added successfully in src//main//resources//operatormenu//screen.json
+2018-05-26 15:55:43 INFO  ScreenDAOImpl:29 - Screen inserted
+2018-05-26 15:57:05 INFO  FileUtil:63 - Screen added successfully in src//main//resources//operatormenu//screen.json
+2018-05-26 15:57:05 INFO  ScreenDAOImpl:29 - Screen inserted

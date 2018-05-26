@@ -34,20 +34,14 @@ public class MovieServiceImplTest {
 	
 	@Test(expected = MovieNullPointerException.class)
 	public void addMovieToScreen_ShouldThrowMovieNullPointerException_WhenNullMovieObjectGiven() throws IOException {
-		Movie movie = null;
 		Screen screen = new Screen(100, "Screen1");
-		movieService.addMovie(screen, movie);
+		movieService.addMovie(screen);
 	}
 	
 	@Test(expected = ScreenNullPointerException.class)
 	public void addMovieToScreen_ShouldThrowScreenNullPointerException_WhenNullScreenObjectGiven() throws ParseException, IOException {
-		List<String> actors = Arrays.asList("Josh Brolin", "Josh Brolin");
-		String duration = "2:00";
-		SimpleDateFormat format = new SimpleDateFormat("HH:mm");
-		Date time = format.parse(duration);
-		Movie movie = new Movie("Deadpool 2", "Marvel", actors, time);
 		Screen screen = null;
-		movieService.addMovie(screen, movie);		
+		movieService.addMovie(screen);		
 	}
 	
 	@Test
@@ -58,8 +52,8 @@ public class MovieServiceImplTest {
 		Date time = format.parse(duration);
 		Screen screen = new Screen(100, "Screen1");
 		Movie movie = new Movie("Deadpool 2", "Marvel", actors, time);
-		when(movieDAO.insertMovie(screen,movie)).thenReturn(1);
-		int rowAdded = movieService.addMovie(screen,movie);
+		when(movieDAO.insertMovie(screen)).thenReturn(true);
+		boolean rowAdded = movieService.addMovie(screen);
 		assertEquals(1, rowAdded);
 	}
 }

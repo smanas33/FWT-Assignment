@@ -24,14 +24,15 @@ public class ScreenDAOImpl implements ScreenDAO {
 
 	public int insertScreen(Screen screen) throws IOException {
 		int rowAffected = 0;
+		System.out.println("inside insert screen dao");
 		rowAffected = fileUtil.writeIntoJsonFile(screen);
 		LOGGER.info("Screen inserted");
 		return rowAffected;
 	}
 
-	public List<Screen> getAllScreen() throws FileEmptyException, IOException {
+	public List<Screen> getAllScreen() {
 		List<Screen> screenLists = new ArrayList<Screen>();
-		screenLists = fileUtil.readFromJsonFile(filePath);
+		screenLists = fileUtil.readFromJsonFile();
 		LOGGER.info(screenLists);
 		return screenLists;
 	}

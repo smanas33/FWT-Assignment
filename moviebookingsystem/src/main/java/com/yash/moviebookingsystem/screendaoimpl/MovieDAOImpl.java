@@ -1,10 +1,10 @@
 package com.yash.moviebookingsystem.screendaoimpl;
 
 import java.io.IOException;
+import java.util.List;
 
 import org.apache.log4j.Logger;
 
-import com.yash.moviebookingsystem.model.Movie;
 import com.yash.moviebookingsystem.model.Screen;
 import com.yash.moviebookingsystem.screendao.MovieDAO;
 import com.yash.moviebookingsystem.util.FileUtil;
@@ -18,9 +18,10 @@ public class MovieDAOImpl implements MovieDAO {
 		this.fileUtil = fileUtil;
 	}
 
-	public int insertMovie(Screen screen, Movie movie) throws IOException {
-		int rowAffected = 0;
-		rowAffected = fileUtil.writeMovieIntoJsonFile(screen);
+	public boolean insertMovie(Screen screen) throws IOException {
+		boolean rowAffected = false;
+		List<Screen> screenList = null;
+		rowAffected = fileUtil.updateListOfScreens(screenList);
 		LOGGER.info("Screen inserted");
 		return rowAffected;
 	}

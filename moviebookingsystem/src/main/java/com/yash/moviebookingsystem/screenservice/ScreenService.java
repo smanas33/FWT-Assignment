@@ -9,5 +9,7 @@ import com.yash.moviebookingsystem.model.Screen;
 public interface ScreenService {
 
 	int addScreen(Screen screen) throws FileEmptyException, FileNotFoundException, IOException;
+	
+	int updateScreen(Screen screen) throws FileEmptyException, IOException;
 
 }

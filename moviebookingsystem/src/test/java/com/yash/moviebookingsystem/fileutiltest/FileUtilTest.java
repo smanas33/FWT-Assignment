@@ -22,15 +22,15 @@ public class FileUtilTest {
 	
 	@Test
 	public void writeIntoJsonFile_shouldReturnOne_whenScreenObjectGiven() throws IOException {
-		Screen screen = new Screen(100, "screen1");
+		Screen screen = new Screen(200, "screen2");
 		int rowAffected = fileUtil.writeIntoJsonFile(screen);
 		assertEquals(1, rowAffected);
 	}
 	
 	@Test
-	public void readFromJsonFile_shouldReturnOne_whenScreenObjectGiven() throws IOException {
+	public void readFromJsonFile_shouldReturnOne_whenScreenObjectGiven() {
 		String filePath = "src//main//resources//operatormenu//screen.json";
-		List<Screen> list = fileUtil.readFromJsonFile(filePath);
+		List<Screen> list = fileUtil.readFromJsonFile();
 		for (Screen screen : list) {
 			System.out.println(screen.getScreenName());
 		}
