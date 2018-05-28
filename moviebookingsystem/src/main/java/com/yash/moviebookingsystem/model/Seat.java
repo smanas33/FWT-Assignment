@@ -1,5 +1,11 @@
 package com.yash.moviebookingsystem.model;
 
+/**
+ * This is simple POJO seat class
+ * 
+ * @author sahoo.manas
+ * 
+ */
 public class Seat {
 	private int seatNo;
 	private boolean available;

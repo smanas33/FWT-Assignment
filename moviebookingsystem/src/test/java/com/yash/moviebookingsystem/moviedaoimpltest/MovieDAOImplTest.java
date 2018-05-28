@@ -12,15 +12,15 @@ import com.yash.moviebookingsystem.screendaoimpl.MovieDAOImpl;
 import com.yash.moviebookingsystem.util.FileUtil;
 
 public class MovieDAOImplTest {
-	
-	MovieDAO movieDAO;
+
+	private MovieDAO movieDAO;
 	private FileUtil fileUtil;
-	
+
 	@Before
-	public void init(){
+	public void init() {
 		movieDAO = new MovieDAOImpl(fileUtil);
 	}
-	
+
 	@Test(expected = MovieNullPointerException.class)
 	public void addMovieToScreen_ShouldThrowMovieNullPointerException_WhenNullMovieObjectGiven() throws IOException {
 		Screen screen = new Screen(100, "Screen1");

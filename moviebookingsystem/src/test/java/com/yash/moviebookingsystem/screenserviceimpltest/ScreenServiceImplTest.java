@@ -1,7 +1,8 @@
 package com.yash.moviebookingsystem.screenserviceimpltest;
 
-import static org.junit.Assert.*;
-import static org.mockito.Mockito.*;
+import static org.junit.Assert.assertEquals;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -12,7 +13,6 @@ import org.junit.Test;
 import com.yash.moviebookingsystem.exception.FileEmptyException;
 import com.yash.moviebookingsystem.exception.ScreenExistException;
 import com.yash.moviebookingsystem.exception.ScreenNullPointerException;
-
 import com.yash.moviebookingsystem.model.Screen;
 import com.yash.moviebookingsystem.screendao.ScreenDAO;
 import com.yash.moviebookingsystem.screenservice.ScreenService;

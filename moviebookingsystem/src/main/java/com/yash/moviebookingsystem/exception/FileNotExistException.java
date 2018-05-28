@@ -1,8 +1,17 @@
 package com.yash.moviebookingsystem.exception;
 
-import java.io.FileNotFoundException;
+/**
+ * This class is a custom Exception class to handle non existing file exceptions
+ * 
+ * @author sahoo.manas
+ * 
+ */
+public class FileNotExistException extends RuntimeException {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -8109771164176925108L;
 
-public class FileNotExistException extends RuntimeException{
 	public FileNotExistException(String exception) {
 		super(exception);
 	}

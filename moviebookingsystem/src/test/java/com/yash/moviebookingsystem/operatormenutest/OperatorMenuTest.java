@@ -9,24 +9,25 @@ public class OperatorMenuTest {
 
 	@Test(expected = FileNullPointerException.class)
 	public void shouldThrowFileNullPointerExcepTion_WhenNoFileNameGiven() {
-		String fileName = null;
-		OperatorMenu.chooseUserOption();;
+		// String fileName = null;
+		OperatorMenu.chooseUserOption();
+		;
 	}
 
 	@Test(expected = FileNullPointerException.class)
 	public void shouldThrowEmptyFileExcepTion_WhenGivenFileNameIsEmpty() {
-		String fileName = "";
+		// String fileName = "";
 		OperatorMenu.chooseUserOption();
 	}
 
 	@Test
 	public void shouldThrowFileNotFoundExcepTion_WhenWrongFileNameGiven() {
-		String fileName = "testFile1.tx";
+		// String fileName = "testFile1.tx";
 		OperatorMenu.chooseUserOption();
 	}
 
 	@Test
-	public void shouldNotThrowAnyException_WhenCorrectFileNameGiven() {		
+	public void shouldNotThrowAnyException_WhenCorrectFileNameGiven() {
 		OperatorMenu.chooseUserOption();
 	}
 

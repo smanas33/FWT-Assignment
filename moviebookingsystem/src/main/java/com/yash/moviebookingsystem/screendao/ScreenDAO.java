@@ -6,10 +6,17 @@ import java.util.List;
 import com.yash.moviebookingsystem.exception.FileEmptyException;
 import com.yash.moviebookingsystem.model.Screen;
 
+/**
+ * 
+ * @author sahoo.manas
+ * 
+ */
 public interface ScreenDAO {
 
-	int insertScreen(Screen screen) throws IOException;
+	public int insertScreen(Screen screen) throws IOException;
 
-	List<Screen> getAllScreen() throws FileEmptyException, IOException;
+	public List<Screen> getAllScreen() throws FileEmptyException, IOException;
+
+	public boolean updateScreen(List<Screen> screens);
 
 }

@@ -3,11 +3,17 @@ package com.yash.moviebookingsystem.model;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * This is simple POJO screen class
+ * 
+ * @author sahoo.manas
+ * 
+ */
 public class Screen {
-	
-	static final String GOLD_CLASS="gold";
-	static final String SILVER_CLASS="sliver";
-	static final String PREMIUM_CLASS="premium";
+
+	static final String PLATINUM_CLASS = "Platinum";
+	static final String GOLD_CLASS = "Gold";
+	static final String SILVER_CLASS = "Silver";
 
 	private int screenId;
 	private String screenName;
@@ -22,7 +28,7 @@ public class Screen {
 	}
 
 	public Screen() {
-	
+
 	}
 
 	public int getScreenId() {

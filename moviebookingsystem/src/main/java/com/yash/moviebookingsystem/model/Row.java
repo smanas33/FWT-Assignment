@@ -2,6 +2,12 @@ package com.yash.moviebookingsystem.model;
 
 import java.util.List;
 
+/**
+ * This is simple POJO row class
+ * 
+ * @author sahoo.manas
+ * 
+ */
 public class Row {
 
 	private String rowNo;
